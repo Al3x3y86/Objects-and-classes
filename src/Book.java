@@ -1,18 +1,18 @@
 public class Book {
     private final String titleOfTheBook;
-    Author nameAuthor;
+    private final Author Author;
     private int yearOfPublication;
 
     public Book(String titleOfTheBook, int yearOfPublication, Author nameAuthor) {
         this.titleOfTheBook = titleOfTheBook;
         this.yearOfPublication = yearOfPublication;
-        this.nameAuthor = nameAuthor;
+        this.Author = nameAuthor;
     }
     public String getTitleOfTheBook() {
         return this.titleOfTheBook;
     }
     public String getNameAuthor() {
-        return this.nameAuthor.getFirstname()+ this.nameAuthor.getLastname();
+        return this.Author.getFirstname()+ this.Author.getLastname();
     }
     public int getYearOfPublication() {
         return this.yearOfPublication;
