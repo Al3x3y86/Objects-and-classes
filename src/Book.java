@@ -1,5 +1,5 @@
 public class Book {
-    String titleOfTheBook;
+    private final String titleOfTheBook;
     Author nameAuthor;
     private int yearOfPublication;
 
@@ -12,7 +12,7 @@ public class Book {
         return this.titleOfTheBook;
     }
     public String getNameAuthor() {
-        return this.nameAuthor.firstname+" "+this.nameAuthor.lastname;
+        return this.nameAuthor.getFirstname()+ this.nameAuthor.getLastname();
     }
     public int getYearOfPublication() {
         return this.yearOfPublication;
